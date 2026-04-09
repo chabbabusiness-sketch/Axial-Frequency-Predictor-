@@ -1,0 +1,7 @@
+Feature,Importance_Mean,Importance_STD,Feature_Label
+E Fixed,1.144383246283702,0.07363008214425147,$E_{\mathrm{fixed}}$
+rho Free,0.5668654215053718,0.060012022632767933,$\rho_{\mathrm{free}}$
+E Free,0.5140590588813712,0.04656709991626621,$E_{\mathrm{free}}$
+nu Free,0.061924437977207626,0.012900834805864948,$\nu_{\mathrm{free}}$
+rho Fixed,0.02878243757177715,0.008767014149783741,$\rho_{\mathrm{fixed}}$
+nu Fixed,0.02467748041269142,0.003222026692469213,$\nu_{\mathrm{fixed}}$

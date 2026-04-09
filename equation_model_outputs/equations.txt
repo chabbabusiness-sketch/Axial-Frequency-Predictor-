@@ -1,0 +1,49 @@
+Equation focused models for Axial Frequency
+Units used in equations: E in GPa, density in original dataset units, ν dimensionless.
+
+[Polynomial_deg3]
+f axial = 1348.654046 + 66.749114*E fixed GPa + 0.120289*ρ fixed - 221.943598*ν fixed + 37.863499*E free GPa - 0.119186*ρ free - 329.157352*ν free - 0.211967*E fixed GPa^2 - 0.001724*E fixed GPa ρ fixed - 28.688833*E fixed GPa ν fixed + 0.039635*E fixed GPa E free GPa - 0.002539*E fixed GPa ρ free + 17.553100*E fixed GPa ν free + 3.971732e-06*ρ fixed^2 - 0.754910*ρ fixed ν fixed - 3.926384e-04*ρ fixed E free GPa + 1.296680e-05*ρ fixed ρ free + 0.059498*ρ fixed ν free - 187.786490*ν fixed^2 + 13.590818*ν fixed E free GPa - 0.344619*ν fixed ρ free - 209.584930*ν fixed ν free - 0.201748*E free GPa^2 - 0.001724*E free GPa ρ free - 88.109889*E free GPa ν free + 4.568011e-05*ρ free^2 - 1.727833*ρ free ν free - 287.295997*ν free^2 + 2.464210e-04*E fixed GPa^3 - 2.079847e-06*E fixed GPa^2 ρ fixed + 0.170838*E fixed GPa^2 ν fixed + 2.815610e-05*E fixed GPa^2 E free GPa + 1.091677e-06*E fixed GPa^2 ρ free + 0.071056*E fixed GPa^2 ν free + 1.102030e-07*E fixed GPa ρ fixed^2 - 0.001916*E fixed GPa ρ fixed ν fixed - 9.007684e-07*E fixed GPa ρ fixed E free GPa + 9.176982e-09*E fixed GPa ρ fixed ρ free + 2.002350e-04*E fixed GPa ρ fixed ν free + 37.319867*E fixed GPa ν fixed^2 - 0.007327*E fixed GPa ν fixed E free GPa + 8.064539e-04*E fixed GPa ν fixed ρ free + 30.817054*E fixed GPa ν fixed ν free - 5.478336e-05*E fixed GPa E free GPa^2 - 2.260889e-07*E fixed GPa E free GPa ρ free + 0.007508*E fixed GPa E free GPa ν free + 2.390144e-08*E fixed GPa ρ free^2 + 0.002704*E fixed GPa ρ free ν free - 178.145998*E fixed GPa ν free^2 - 9.504853e-10*ρ fixed^3 + 4.124603e-05*ρ fixed^2 ν fixed + 9.385416e-09*ρ fixed^2 E free GPa - 6.368107e-11*ρ fixed^2 ρ free + 8.553887e-06*ρ fixed^2 ν free + 0.266874*ρ fixed ν fixed^2 + 1.697343e-04*ρ fixed ν fixed E free GPa - 6.009536e-06*ρ fixed ν fixed ρ free - 0.145691*ρ fixed ν fixed ν free + 2.478193e-07*ρ fixed E free GPa^2 + 5.412497e-09*ρ fixed E free GPa ρ free - 8.445891e-05*ρ fixed E free GPa ν free - 2.767594e-10*ρ fixed ρ free^2 - 6.381632e-06*ρ fixed ρ free ν free - 0.176840*ρ fixed ν free^2 - 120.838331*ν fixed^3 - 39.360129*ν fixed^2 E free GPa + 0.937696*ν fixed^2 ρ free - 117.208814*ν fixed^2 ν free + 0.001060*ν fixed E free GPa^2 + 3.130560e-04*ν fixed E free GPa ρ free + 9.286708*ν fixed E free GPa ν free - 3.441918e-06*ν fixed ρ free^2 - 0.493012*ν fixed ρ free ν free - 140.936585*ν fixed ν free^2 + 3.284991e-04*E free GPa^3 - 5.479206e-06*E free GPa^2 ρ free + 0.344050*E free GPa^2 ν free + 2.136428e-07*E free GPa ρ free^2 - 0.007416*E free GPa ρ free ν free + 249.440605*E free GPa ν free^2 - 2.366508e-09*ρ free^3 + 6.150786e-05*ρ free^2 ν free + 1.894682*ρ free ν free^2 - 191.470611*ν free^3
+
+[GAM]
+f axial = β0 + s1(E fixed) + s2(ρ fixed) + s3(ν fixed) + s4(E free) + s5(ρ free) + s6(ν free)
+
+[Polynomial_deg2]
+f axial = 3391.858153 + 26.827715*E fixed GPa - 0.052749*ρ fixed - 1258.429469*ν fixed + 8.300062*E free GPa - 0.266167*ρ free - 2533.219074*ν free - 0.028292*E fixed GPa^2 + 7.242121e-05*E fixed GPa ρ fixed + 3.133922*E fixed GPa ν fixed + 0.007923*E fixed GPa E free GPa - 3.047642e-04*E fixed GPa ρ free - 24.085064*E fixed GPa ν free - 2.253482e-06*ρ fixed^2 + 0.100082*ρ fixed ν fixed - 8.453015e-05*ρ fixed E free GPa + 3.216523e-06*ρ fixed ρ free + 0.062151*ρ fixed ν free - 1259.422412*ν fixed^2 - 7.797953*ν fixed E free GPa + 0.058783*ν fixed ρ free - 1332.934931*ν fixed ν free - 0.018375*E free GPa^2 - 2.050816e-06*E free GPa ρ free + 13.118650*E free GPa ν free + 3.566784e-06*ρ free^2 + 0.235078*ρ free ν free - 2404.421229*ν free^2
+
+[Piecewise_ElasticNet]
+f axial = 2588.183463
+where B_j(x) are piecewise linear spline basis functions:
+  - 3526.341146*E fixed GPa sp 0
+  - 1194.626265*E fixed GPa sp 1
+  - 1002.442655*E fixed GPa sp 2
+  + 386.528683*ρ fixed sp 0
+  + 380.127002*ρ fixed sp 1
+  + 270.884931*ρ fixed sp 2
+  + 1116.216470*ν fixed sp 0
+  + 161.447150*ν fixed sp 1
+  + 701.582447*ν fixed sp 2
+  - 1400.020123*E free GPa sp 0
+  + 34.595421*E free GPa sp 1
+  - 804.562188*E free GPa sp 2
+  + 1827.160963*ρ free sp 0
+  + 704.291746*ρ free sp 1
+  + 387.790781*ρ free sp 2
+  + 2495.315042*ν free sp 0
+  + 285.989016*ν free sp 1
+  + 1399.605832*ν free sp 2
+
+[Lasso]
+f axial = 4673.747085 + 7.954791*E fixed GPa - 0.016245*ρ fixed - 1994.708025*ν fixed + 1.702074*E free GPa - 0.094228*ρ free - 4545.136090*ν free
+
+[LinearRegression]
+f axial = 4673.925307 + 7.954667*E fixed GPa - 0.016245*ρ fixed - 1994.933486*ν fixed + 1.701953*E free GPa - 0.094227*ρ free - 4545.377327*ν free
+
+[ElasticNet]
+f axial = 4408.997122 + 8.067255*E fixed GPa - 0.016422*ρ fixed - 1793.930214*ν fixed + 1.950838*E free GPa - 0.094887*ρ free - 4054.506206*ν free
+
+[Ridge]
+f axial = 4050.189071 + 8.221722*E fixed GPa - 0.016667*ρ fixed - 1518.025309*ν fixed + 2.286036*E free GPa - 0.095775*ρ free - 3393.314737*ν free
+
+[SymbolicRegression]
+f axial = abs(add(sub(mul(log(sub(mul(log(sub(neg(abs(-1.632)), mul(ρ fixed, E free GPa))), add(mul(log(sub(mul(div(abs(E fixed GPa), ν free), div(E free GPa, ν free)), ρ free)), log(sub(neg(add(sqrt(mul(ρ fixed, E free GPa)), ρ free)), sub(sub(abs(-1.632), mul(ρ fixed, E free GPa)), mul(ρ fixed, E free GPa))))), E fixed GPa)), mul(neg(ν fixed), abs(-1.632)))), add(mul(log(sub(mul(div(abs(E fixed GPa), ν free), div(E free GPa, ν free)), ν fixed)), log(sub(neg(abs(-1.632)), mul(ρ fixed, E free GPa)))), E fixed GPa)), mul(neg(ν fixed), abs(-1.632))), mul(log(sub(E free GPa, sub(abs(-1.632), mul(ρ fixed, E free GPa)))), log(mul(abs(add(sub(mul(log(ρ fixed), add(mul(log(sub(mul(div(abs(E fixed GPa), ν free), div(E free GPa, ν free)), ρ free)), log(sub(neg(add(sqrt(mul(ρ fixed, E free GPa)), ρ free)), mul(ρ fixed, E free GPa)))), E fixed GPa)), add(ν free, E fixed GPa)), mul(div(log(sub(E free GPa, sub(abs(-1.632), mul(ρ fixed, E free GPa)))), ν free), div(E free GPa, ν free)))), mul(ρ fixed, E free GPa))))))
+
